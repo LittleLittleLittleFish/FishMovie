@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B164665803A6896B4E626FDC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 132F1A647C50F4C22FD1F3B1 /* libPods.a */; };
+		D0031B2A1C9FC6760029B44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B291C9FC6760029B44C /* main.m */; };
+		D0031B2D1C9FC6760029B44C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B2C1C9FC6760029B44C /* AppDelegate.m */; };
+		D0031B331C9FC6760029B44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0031B311C9FC6760029B44C /* Main.storyboard */; };
+		D0031B351C9FC6760029B44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0031B341C9FC6760029B44C /* Assets.xcassets */; };
+		D0031B381C9FC6760029B44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0031B361C9FC6760029B44C /* LaunchScreen.storyboard */; };
+		D0031B431C9FC6760029B44C /* FishMovieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B421C9FC6760029B44C /* FishMovieTests.m */; };
+		D0031B4E1C9FC6760029B44C /* FishMovieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B4D1C9FC6760029B44C /* FishMovieUITests.m */; };
+		D0031B731C9FFD160029B44C /* FishTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B721C9FFD160029B44C /* FishTabBarController.m */; };
+		D0031B761CA018270029B44C /* FMMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B751CA018270029B44C /* FMMovieViewController.m */; };
+		D0031B791CA018380029B44C /* FMNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B781CA018380029B44C /* FMNewsViewController.m */; };
+		D0031B7C1CA018450029B44C /* FMCinemaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B7B1CA018450029B44C /* FMCinemaViewController.m */; };
+		D0031B7F1CA018500029B44C /* FMMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B7E1CA018500029B44C /* FMMoreViewController.m */; };
+		D0031B821CA0185B0029B44C /* FMTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B811CA0185B0029B44C /* FMTopViewController.m */; };
+		D0031B851CA018680029B44C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B841CA018680029B44C /* BaseViewController.m */; };
+		D0031B881CA018850029B44C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B871CA018850029B44C /* BaseNavigationController.m */; };
+		D0031B8B1CA0E92B0029B44C /* USBoxModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B8A1CA0E92B0029B44C /* USBoxModel.m */; };
+		D0031B8E1CA0F2E60029B44C /* USTopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B8D1CA0F2E60029B44C /* USTopModel.m */; };
+		D0031B921CA14E080029B44C /* InterfaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B911CA14E080029B44C /* InterfaceManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0031B3F1C9FC6760029B44C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0031B1D1C9FC6760029B44C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0031B241C9FC6760029B44C;
+			remoteInfo = FishMovie;
+		};
+		D0031B4A1C9FC6760029B44C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0031B1D1C9FC6760029B44C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0031B241C9FC6760029B44C;
+			remoteInfo = FishMovie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		132F1A647C50F4C22FD1F3B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		136D033DAA89291E139F2AB7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A1D649A02131B8ED27F95FD8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D0031B251C9FC6760029B44C /* FishMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0031B291C9FC6760029B44C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0031B2B1C9FC6760029B44C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0031B2C1C9FC6760029B44C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0031B321C9FC6760029B44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0031B341C9FC6760029B44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0031B371C9FC6760029B44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0031B391C9FC6760029B44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0031B3E1C9FC6760029B44C /* FishMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0031B421C9FC6760029B44C /* FishMovieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FishMovieTests.m; sourceTree = "<group>"; };
+		D0031B441C9FC6760029B44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0031B491C9FC6760029B44C /* FishMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0031B4D1C9FC6760029B44C /* FishMovieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FishMovieUITests.m; sourceTree = "<group>"; };
+		D0031B4F1C9FC6760029B44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0031B711C9FFD160029B44C /* FishTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishTabBarController.h; sourceTree = "<group>"; };
+		D0031B721C9FFD160029B44C /* FishTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishTabBarController.m; sourceTree = "<group>"; };
+		D0031B741CA018270029B44C /* FMMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMovieViewController.h; sourceTree = "<group>"; };
+		D0031B751CA018270029B44C /* FMMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMovieViewController.m; sourceTree = "<group>"; };
+		D0031B771CA018380029B44C /* FMNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMNewsViewController.h; sourceTree = "<group>"; };
+		D0031B781CA018380029B44C /* FMNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMNewsViewController.m; sourceTree = "<group>"; };
+		D0031B7A1CA018450029B44C /* FMCinemaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMCinemaViewController.h; sourceTree = "<group>"; };
+		D0031B7B1CA018450029B44C /* FMCinemaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMCinemaViewController.m; sourceTree = "<group>"; };
+		D0031B7D1CA018500029B44C /* FMMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMoreViewController.h; sourceTree = "<group>"; };
+		D0031B7E1CA018500029B44C /* FMMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMoreViewController.m; sourceTree = "<group>"; };
+		D0031B801CA0185B0029B44C /* FMTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTopViewController.h; sourceTree = "<group>"; };
+		D0031B811CA0185B0029B44C /* FMTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTopViewController.m; sourceTree = "<group>"; };
+		D0031B831CA018680029B44C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		D0031B841CA018680029B44C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D0031B861CA018850029B44C /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		D0031B871CA018850029B44C /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		D0031B891CA0E92B0029B44C /* USBoxModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBoxModel.h; sourceTree = "<group>"; };
+		D0031B8A1CA0E92B0029B44C /* USBoxModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBoxModel.m; sourceTree = "<group>"; };
+		D0031B8C1CA0F2E60029B44C /* USTopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USTopModel.h; sourceTree = "<group>"; };
+		D0031B8D1CA0F2E60029B44C /* USTopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USTopModel.m; sourceTree = "<group>"; };
+		D0031B8F1CA0F3940029B44C /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		D0031B901CA14E080029B44C /* InterfaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceManager.h; sourceTree = "<group>"; };
+		D0031B911CA14E080029B44C /* InterfaceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0031B221C9FC6760029B44C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B164665803A6896B4E626FDC /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0031B3B1C9FC6760029B44C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0031B461C9FC6760029B44C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		637D06DD2D1D7E828BA3061E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				136D033DAA89291E139F2AB7 /* Pods.debug.xcconfig */,
+				A1D649A02131B8ED27F95FD8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D0031B1C1C9FC6760029B44C = {
+			isa = PBXGroup;
+			children = (
+				D0031B271C9FC6760029B44C /* FishMovie */,
+				D0031B411C9FC6760029B44C /* FishMovieTests */,
+				D0031B4C1C9FC6760029B44C /* FishMovieUITests */,
+				D0031B261C9FC6760029B44C /* Products */,
+				637D06DD2D1D7E828BA3061E /* Pods */,
+				E7A36440243B78603793CAB2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0031B261C9FC6760029B44C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B251C9FC6760029B44C /* FishMovie.app */,
+				D0031B3E1C9FC6760029B44C /* FishMovieTests.xctest */,
+				D0031B491C9FC6760029B44C /* FishMovieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0031B271C9FC6760029B44C /* FishMovie */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B6D1C9FFB260029B44C /* Base */,
+				D0031B5B1C9FF64D0029B44C /* Business */,
+				D0031B5C1C9FF64D0029B44C /* Controller */,
+				D0031B5D1C9FF64D0029B44C /* Model */,
+				D0031B5E1C9FF64D0029B44C /* Tools */,
+				D0031B5F1C9FF64D0029B44C /* View */,
+				D0031B2B1C9FC6760029B44C /* AppDelegate.h */,
+				D0031B2C1C9FC6760029B44C /* AppDelegate.m */,
+				D0031B8F1CA0F3940029B44C /* Constant.h */,
+				D0031B311C9FC6760029B44C /* Main.storyboard */,
+				D0031B341C9FC6760029B44C /* Assets.xcassets */,
+				D0031B361C9FC6760029B44C /* LaunchScreen.storyboard */,
+				D0031B391C9FC6760029B44C /* Info.plist */,
+				D0031B281C9FC6760029B44C /* Supporting Files */,
+			);
+			path = FishMovie;
+			sourceTree = "<group>";
+		};
+		D0031B281C9FC6760029B44C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B291C9FC6760029B44C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0031B411C9FC6760029B44C /* FishMovieTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B421C9FC6760029B44C /* FishMovieTests.m */,
+				D0031B441C9FC6760029B44C /* Info.plist */,
+			);
+			path = FishMovieTests;
+			sourceTree = "<group>";
+		};
+		D0031B4C1C9FC6760029B44C /* FishMovieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B4D1C9FC6760029B44C /* FishMovieUITests.m */,
+				D0031B4F1C9FC6760029B44C /* Info.plist */,
+			);
+			path = FishMovieUITests;
+			sourceTree = "<group>";
+		};
+		D0031B5B1C9FF64D0029B44C /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B901CA14E080029B44C /* InterfaceManager.h */,
+				D0031B911CA14E080029B44C /* InterfaceManager.m */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		D0031B5C1C9FF64D0029B44C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B601C9FFAD90029B44C /* Cinema */,
+				D0031B611C9FFAD90029B44C /* More */,
+				D0031B621C9FFAD90029B44C /* Movie */,
+				D0031B631C9FFAD90029B44C /* News */,
+				D0031B641C9FFAD90029B44C /* Top */,
+				D0031B711C9FFD160029B44C /* FishTabBarController.h */,
+				D0031B721C9FFD160029B44C /* FishTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D0031B5D1C9FF64D0029B44C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B891CA0E92B0029B44C /* USBoxModel.h */,
+				D0031B8A1CA0E92B0029B44C /* USBoxModel.m */,
+				D0031B8C1CA0F2E60029B44C /* USTopModel.h */,
+				D0031B8D1CA0F2E60029B44C /* USTopModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0031B5E1C9FF64D0029B44C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D0031B5F1C9FF64D0029B44C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B651C9FFAE10029B44C /* Cinema */,
+				D0031B661C9FFAE10029B44C /* More */,
+				D0031B671C9FFAE10029B44C /* Movie */,
+				D0031B681C9FFAE10029B44C /* News */,
+				D0031B691C9FFAE10029B44C /* Top */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0031B601C9FFAD90029B44C /* Cinema */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B7A1CA018450029B44C /* FMCinemaViewController.h */,
+				D0031B7B1CA018450029B44C /* FMCinemaViewController.m */,
+			);
+			path = Cinema;
+			sourceTree = "<group>";
+		};
+		D0031B611C9FFAD90029B44C /* More */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B7D1CA018500029B44C /* FMMoreViewController.h */,
+				D0031B7E1CA018500029B44C /* FMMoreViewController.m */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		D0031B621C9FFAD90029B44C /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B741CA018270029B44C /* FMMovieViewController.h */,
+				D0031B751CA018270029B44C /* FMMovieViewController.m */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		D0031B631C9FFAD90029B44C /* News */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B771CA018380029B44C /* FMNewsViewController.h */,
+				D0031B781CA018380029B44C /* FMNewsViewController.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		D0031B641C9FFAD90029B44C /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B801CA0185B0029B44C /* FMTopViewController.h */,
+				D0031B811CA0185B0029B44C /* FMTopViewController.m */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		D0031B651C9FFAE10029B44C /* Cinema */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cinema;
+			sourceTree = "<group>";
+		};
+		D0031B661C9FFAE10029B44C /* More */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		D0031B671C9FFAE10029B44C /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		D0031B681C9FFAE10029B44C /* News */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		D0031B691C9FFAE10029B44C /* Top */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		D0031B6D1C9FFB260029B44C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D0031B831CA018680029B44C /* BaseViewController.h */,
+				D0031B841CA018680029B44C /* BaseViewController.m */,
+				D0031B861CA018850029B44C /* BaseNavigationController.h */,
+				D0031B871CA018850029B44C /* BaseNavigationController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E7A36440243B78603793CAB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				132F1A647C50F4C22FD1F3B1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0031B241C9FC6760029B44C /* FishMovie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0031B521C9FC6760029B44C /* Build configuration list for PBXNativeTarget "FishMovie" */;
+			buildPhases = (
+				A559FE828F6AF8E41B1EE2E4 /* Check Pods Manifest.lock */,
+				D0031B211C9FC6760029B44C /* Sources */,
+				D0031B221C9FC6760029B44C /* Frameworks */,
+				D0031B231C9FC6760029B44C /* Resources */,
+				AF820B1B6FF30CD893B1D3D5 /* Embed Pods Frameworks */,
+				E801615C833AE5F4EA57638F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FishMovie;
+			productName = FishMovie;
+			productReference = D0031B251C9FC6760029B44C /* FishMovie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0031B3D1C9FC6760029B44C /* FishMovieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0031B551C9FC6760029B44C /* Build configuration list for PBXNativeTarget "FishMovieTests" */;
+			buildPhases = (
+				D0031B3A1C9FC6760029B44C /* Sources */,
+				D0031B3B1C9FC6760029B44C /* Frameworks */,
+				D0031B3C1C9FC6760029B44C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0031B401C9FC6760029B44C /* PBXTargetDependency */,
+			);
+			name = FishMovieTests;
+			productName = FishMovieTests;
+			productReference = D0031B3E1C9FC6760029B44C /* FishMovieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0031B481C9FC6760029B44C /* FishMovieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0031B581C9FC6760029B44C /* Build configuration list for PBXNativeTarget "FishMovieUITests" */;
+			buildPhases = (
+				D0031B451C9FC6760029B44C /* Sources */,
+				D0031B461C9FC6760029B44C /* Frameworks */,
+				D0031B471C9FC6760029B44C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0031B4B1C9FC6760029B44C /* PBXTargetDependency */,
+			);
+			name = FishMovieUITests;
+			productName = FishMovieUITests;
+			productReference = D0031B491C9FC6760029B44C /* FishMovieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0031B1D1C9FC6760029B44C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = com.littlefish;
+				TargetAttributes = {
+					D0031B241C9FC6760029B44C = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					D0031B3D1C9FC6760029B44C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D0031B241C9FC6760029B44C;
+					};
+					D0031B481C9FC6760029B44C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D0031B241C9FC6760029B44C;
+					};
+				};
+			};
+			buildConfigurationList = D0031B201C9FC6760029B44C /* Build configuration list for PBXProject "FishMovie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0031B1C1C9FC6760029B44C;
+			productRefGroup = D0031B261C9FC6760029B44C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0031B241C9FC6760029B44C /* FishMovie */,
+				D0031B3D1C9FC6760029B44C /* FishMovieTests */,
+				D0031B481C9FC6760029B44C /* FishMovieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0031B231C9FC6760029B44C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0031B381C9FC6760029B44C /* LaunchScreen.storyboard in Resources */,
+				D0031B351C9FC6760029B44C /* Assets.xcassets in Resources */,
+				D0031B331C9FC6760029B44C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0031B3C1C9FC6760029B44C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0031B471C9FC6760029B44C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A559FE828F6AF8E41B1EE2E4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF820B1B6FF30CD893B1D3D5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E801615C833AE5F4EA57638F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0031B211C9FC6760029B44C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0031B7F1CA018500029B44C /* FMMoreViewController.m in Sources */,
+				D0031B921CA14E080029B44C /* InterfaceManager.m in Sources */,
+				D0031B851CA018680029B44C /* BaseViewController.m in Sources */,
+				D0031B7C1CA018450029B44C /* FMCinemaViewController.m in Sources */,
+				D0031B761CA018270029B44C /* FMMovieViewController.m in Sources */,
+				D0031B881CA018850029B44C /* BaseNavigationController.m in Sources */,
+				D0031B2D1C9FC6760029B44C /* AppDelegate.m in Sources */,
+				D0031B791CA018380029B44C /* FMNewsViewController.m in Sources */,
+				D0031B8E1CA0F2E60029B44C /* USTopModel.m in Sources */,
+				D0031B821CA0185B0029B44C /* FMTopViewController.m in Sources */,
+				D0031B2A1C9FC6760029B44C /* main.m in Sources */,
+				D0031B8B1CA0E92B0029B44C /* USBoxModel.m in Sources */,
+				D0031B731C9FFD160029B44C /* FishTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0031B3A1C9FC6760029B44C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0031B431C9FC6760029B44C /* FishMovieTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0031B451C9FC6760029B44C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0031B4E1C9FC6760029B44C /* FishMovieUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0031B401C9FC6760029B44C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0031B241C9FC6760029B44C /* FishMovie */;
+			targetProxy = D0031B3F1C9FC6760029B44C /* PBXContainerItemProxy */;
+		};
+		D0031B4B1C9FC6760029B44C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0031B241C9FC6760029B44C /* FishMovie */;
+			targetProxy = D0031B4A1C9FC6760029B44C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0031B311C9FC6760029B44C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0031B321C9FC6760029B44C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0031B361C9FC6760029B44C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0031B371C9FC6760029B44C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0031B501C9FC6760029B44C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0031B511C9FC6760029B44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0031B531C9FC6760029B44C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 136D033DAA89291E139F2AB7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FishMovie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlefish.FishMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0031B541C9FC6760029B44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1D649A02131B8ED27F95FD8 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FishMovie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlefish.FishMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D0031B561C9FC6760029B44C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FishMovieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlefish.FishMovieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishMovie.app/FishMovie";
+			};
+			name = Debug;
+		};
+		D0031B571C9FC6760029B44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FishMovieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlefish.FishMovieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishMovie.app/FishMovie";
+			};
+			name = Release;
+		};
+		D0031B591C9FC6760029B44C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FishMovieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlefish.FishMovieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FishMovie;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D0031B5A1C9FC6760029B44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FishMovieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlefish.FishMovieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FishMovie;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0031B201C9FC6760029B44C /* Build configuration list for PBXProject "FishMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0031B501C9FC6760029B44C /* Debug */,
+				D0031B511C9FC6760029B44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0031B521C9FC6760029B44C /* Build configuration list for PBXNativeTarget "FishMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0031B531C9FC6760029B44C /* Debug */,
+				D0031B541C9FC6760029B44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0031B551C9FC6760029B44C /* Build configuration list for PBXNativeTarget "FishMovieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0031B561C9FC6760029B44C /* Debug */,
+				D0031B571C9FC6760029B44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0031B581C9FC6760029B44C /* Build configuration list for PBXNativeTarget "FishMovieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0031B591C9FC6760029B44C /* Debug */,
+				D0031B5A1C9FC6760029B44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0031B1D1C9FC6760029B44C /* Project object */;
+}
