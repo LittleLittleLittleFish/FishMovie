@@ -9,6 +9,11 @@
 #ifndef Constant_h
 #define Constant_h
 
+#include "UIColor+Utils.h"
+#include "UIViewExt.h"
+
+
+
 #define API_BASE_URL @"https://api.douban.com"
 
 #endif /* Constant_h */

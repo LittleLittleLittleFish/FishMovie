@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <JSONModel.h>
+#import "USBoxSubjectsModel.h"
 
 //https://api.douban.com/v2/movie/us_box
 /*
@@ -24,67 +25,31 @@
                 "min" : 0,
                 "max" : 10
             },
-        "collect_count" : 49,
-        "images" : {
-            "small" : "http:\/\/img3.douban.com\/view\/photo\/icon\/public\/p1943399384.jpg",
-            "large" : "http:\/\/img3.douban.com\/view\/photo\/photo\/public\/p1943399384.jpg",
-            "medium" : "http:\/\/img3.douban.com\/view\/photo\/thumb\/public\/p1943399384.jpg"
+ 
+            "collect_count" : 49,
+            "images" : {
+                "small" : "http:\/\/img3.douban.com\/view\/photo\/icon\/public\/p1943399384.jpg",
+                "large" : "http:\/\/img3.douban.com\/view\/photo\/photo\/public\/p1943399384.jpg",
+                "medium" : "http:\/\/img3.douban.com\/view\/photo\/thumb\/public\/p1943399384.jpg"
+            },
+            "id" : "3170961",
+            "alt" : "http:\/\/movie.douban.com\/subject\/3170961\/",
+            "title" : "双枪",
+            "subtype" : "movie",
+            "year" : "2013",
+            "original_title" : "2 Guns"
         },
-        "id" : "3170961",
-        "alt" : "http:\/\/movie.douban.com\/subject\/3170961\/",
-        "title" : "双枪",
-        "subtype" : "movie",
-        "year" : "2013",
-        "original_title" : "2 Guns"
-     },
-    "rank" : 1
+        "rank" : 1
      }
  ],
  "title" : "豆瓣电影北美票房榜"
  }
  */
 
-@protocol USBoxRatingModel <NSObject>
-@end
-
-@interface USBoxRatingModel : JSONModel
-@property(nonatomic, strong)NSNumber<Optional> *stars;
-@property(nonatomic, strong)NSNumber<Optional> *average;
-@property(nonatomic, strong)NSNumber<Optional> *min;
-@property(nonatomic, strong)NSNumber<Optional> *max;
-@end
-
-@protocol USBoxSubjectModel<NSObject>
-@end
-
-@interface USBoxSubjectModel : JSONModel
-@property(nonatomic, strong)USBoxRatingModel<Optional> *rating;
-@end
-
-@protocol USBoxSubjectsModel<NSObject>
-@end
-
-@interface USBoxSubjectsModel : JSONModel
-
-@property(nonatomic, copy)NSString<Optional> *box;
-@property(nonatomic, strong)NSNumber<Optional> *new;
-@property(nonatomic, strong)USBoxSubjectModel<Optional> *subject;
-@property(nonatomic, strong)NSNumber<Optional> *collect_count;
-@property(nonatomic, strong)NSDictionary<Optional> *images;
-@property(nonatomic, copy)NSString<Optional> *id;
-@property(nonatomic, copy)NSString<Optional> *alt;
-@property(nonatomic, copy)NSString<Optional> *title;
-@property(nonatomic, copy)NSString<Optional> *subtype;
-@property(nonatomic, copy)NSString<Optional> *year;
-@property(nonatomic, copy)NSString<Optional> *original_title;
-
-@end
-
-
 @interface USBoxModel : JSONModel
 
 @property(nonatomic, copy)NSString<Optional> *date;
 @property(nonatomic, copy)NSString<Optional> *title;
-@property(nonatomic, strong)NSArray<Optional, USBoxSubjectsModel> *subject;
+@property(nonatomic, strong)NSArray<Optional, USBoxSubjectsModel> *subjects;
 
 @end
