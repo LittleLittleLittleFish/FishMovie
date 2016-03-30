@@ -133,6 +133,7 @@
             case 5: //关于
         {
             FMAboutViewContorller *aboutVC = [FMAboutViewContorller loadFromNib];
+            aboutVC.view.frame = CGRectMake(0, 0, self.view.width, self.view.height);
             [self.navigationController pushViewController:aboutVC animated:YES];
         }
             break;

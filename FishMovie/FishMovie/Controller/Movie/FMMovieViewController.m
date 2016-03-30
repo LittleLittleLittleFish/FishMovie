@@ -34,6 +34,9 @@
     [InterfaceManager getUSMovieList:^(int errorCode, NSString *errorMessage, id data) {
         if (errorCode==0) {
             self.modelUSBox = data;
+            
+        }else{
+            
         }
     }];
     

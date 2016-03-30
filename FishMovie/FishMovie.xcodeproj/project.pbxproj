@@ -174,6 +174,8 @@
 		D070B5BD1CAA613400FD148C /* FMAboutViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = D070B5BC1CAA613400FD148C /* FMAboutViewContorller.m */; };
 		D070B5BF1CAA61E600FD148C /* FMAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D070B5BE1CAA61E600FD148C /* FMAboutViewController.xib */; };
 		D070B5E11CAA82F000FD148C /* USBoxSubjectsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D070B5E01CAA82F000FD148C /* USBoxSubjectsModel.m */; };
+		D070B5E41CAB9D3900FD148C /* USBoxSubjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D070B5E31CAB9D3900FD148C /* USBoxSubjectModel.m */; };
+		D070B5E71CAB9D6F00FD148C /* USBoxRatingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D070B5E61CAB9D6F00FD148C /* USBoxRatingModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -386,6 +388,10 @@
 		D070B5BE1CAA61E600FD148C /* FMAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMAboutViewController.xib; sourceTree = "<group>"; };
 		D070B5DF1CAA82F000FD148C /* USBoxSubjectsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBoxSubjectsModel.h; sourceTree = "<group>"; };
 		D070B5E01CAA82F000FD148C /* USBoxSubjectsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBoxSubjectsModel.m; sourceTree = "<group>"; };
+		D070B5E21CAB9D3900FD148C /* USBoxSubjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBoxSubjectModel.h; sourceTree = "<group>"; };
+		D070B5E31CAB9D3900FD148C /* USBoxSubjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBoxSubjectModel.m; sourceTree = "<group>"; };
+		D070B5E51CAB9D6F00FD148C /* USBoxRatingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBoxRatingModel.h; sourceTree = "<group>"; };
+		D070B5E61CAB9D6F00FD148C /* USBoxRatingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBoxRatingModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -523,6 +529,10 @@
 				D0031B8D1CA0F2E60029B44C /* USTopModel.m */,
 				D070B5DF1CAA82F000FD148C /* USBoxSubjectsModel.h */,
 				D070B5E01CAA82F000FD148C /* USBoxSubjectsModel.m */,
+				D070B5E21CAB9D3900FD148C /* USBoxSubjectModel.h */,
+				D070B5E31CAB9D3900FD148C /* USBoxSubjectModel.m */,
+				D070B5E51CAB9D6F00FD148C /* USBoxRatingModel.h */,
+				D070B5E61CAB9D6F00FD148C /* USBoxRatingModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1202,7 +1212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0031B7F1CA018500029B44C /* FMMoreViewController.m in Sources */,
+				D070B5E71CAB9D6F00FD148C /* USBoxRatingModel.m in Sources */,
 				D0031B921CA14E080029B44C /* InterfaceManager.m in Sources */,
+				D070B5E41CAB9D3900FD148C /* USBoxSubjectModel.m in Sources */,
 				D0031B851CA018680029B44C /* BaseViewController.m in Sources */,
 				D0031B7C1CA018450029B44C /* FMCinemaViewController.m in Sources */,
 				D070B5E11CAA82F000FD148C /* USBoxSubjectsModel.m in Sources */,
