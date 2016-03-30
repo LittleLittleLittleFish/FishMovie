@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8486353C1CAAD3D600902AE0 /* PosterCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848635321CAAD3D600902AE0 /* PosterCollectionView.m */; };
+		8486353D1CAAD3D600902AE0 /* PosterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848635341CAAD3D600902AE0 /* PosterCell.m */; };
+		8486353F1CAAD3D600902AE0 /* IndicateCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848635381CAAD3D600902AE0 /* IndicateCollectionView.m */; };
+		848635401CAAD3D600902AE0 /* FMFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8486353A1CAAD3D600902AE0 /* FMFlowLayout.m */; };
+		848635431CAAD4D500902AE0 /* PosterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848635411CAAD4D500902AE0 /* PosterView.m */; };
+		848635461CAAD5A100902AE0 /* BasicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848635441CAAD5A100902AE0 /* BasicCollectionView.m */; };
+		84D1A0771CAB72B8005A1B78 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1A0751CAB72B8005A1B78 /* MenuCell.m */; };
+		84F7AEB11CABA2F200D20419 /* USBoxSubjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AEB01CABA2F200D20419 /* USBoxSubjectModel.m */; };
+		84F7AEB41CABA30600D20419 /* USBoxRatingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AEB31CABA30600D20419 /* USBoxRatingModel.m */; };
+		84F7AEB71CABAAEC00D20419 /* BasicTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AEB61CABAAEC00D20419 /* BasicTableView.m */; };
+		84F7AEBD1CABAFFA00D20419 /* HomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AEBC1CABAFFA00D20419 /* HomeTableView.m */; };
+		84F7AEC11CABB04400D20419 /* MovieTabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AEBF1CABB04400D20419 /* MovieTabelCell.m */; };
+		84F7AEC21CABB04400D20419 /* MovieTabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F7AEC01CABB04400D20419 /* MovieTabelCell.xib */; };
+		84F7AEC51CABB12600D20419 /* RankingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AEC41CABB12600D20419 /* RankingView.m */; };
+		84F7AECB1CABD09C00D20419 /* NegativeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7AECA1CABD09C00D20419 /* NegativeView.m */; };
 		B164665803A6896B4E626FDC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 132F1A647C50F4C22FD1F3B1 /* libPods.a */; };
 		D0031B2A1C9FC6760029B44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B291C9FC6760029B44C /* main.m */; };
 		D0031B2D1C9FC6760029B44C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0031B2C1C9FC6760029B44C /* AppDelegate.m */; };
@@ -198,6 +213,36 @@
 /* Begin PBXFileReference section */
 		132F1A647C50F4C22FD1F3B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		136D033DAA89291E139F2AB7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		848635311CAAD3C300902AE0 /* FishMoviePrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishMoviePrefixHeader.pch; path = FishMovie/FishMoviePrefixHeader.pch; sourceTree = "<group>"; };
+		848635321CAAD3D600902AE0 /* PosterCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterCollectionView.m; sourceTree = "<group>"; };
+		848635331CAAD3D600902AE0 /* PosterCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterCollectionView.h; sourceTree = "<group>"; };
+		848635341CAAD3D600902AE0 /* PosterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterCell.m; sourceTree = "<group>"; };
+		848635351CAAD3D600902AE0 /* PosterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterCell.h; sourceTree = "<group>"; };
+		848635381CAAD3D600902AE0 /* IndicateCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndicateCollectionView.m; sourceTree = "<group>"; };
+		848635391CAAD3D600902AE0 /* IndicateCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndicateCollectionView.h; sourceTree = "<group>"; };
+		8486353A1CAAD3D600902AE0 /* FMFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFlowLayout.m; sourceTree = "<group>"; };
+		8486353B1CAAD3D600902AE0 /* FMFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFlowLayout.h; sourceTree = "<group>"; };
+		848635411CAAD4D500902AE0 /* PosterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterView.m; sourceTree = "<group>"; };
+		848635421CAAD4D500902AE0 /* PosterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterView.h; sourceTree = "<group>"; };
+		848635441CAAD5A100902AE0 /* BasicCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicCollectionView.m; sourceTree = "<group>"; };
+		848635451CAAD5A100902AE0 /* BasicCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicCollectionView.h; sourceTree = "<group>"; };
+		84D1A0741CAB72B8005A1B78 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
+		84D1A0751CAB72B8005A1B78 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
+		84F7AEAF1CABA2F200D20419 /* USBoxSubjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBoxSubjectModel.h; sourceTree = "<group>"; };
+		84F7AEB01CABA2F200D20419 /* USBoxSubjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBoxSubjectModel.m; sourceTree = "<group>"; };
+		84F7AEB21CABA30600D20419 /* USBoxRatingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBoxRatingModel.h; sourceTree = "<group>"; };
+		84F7AEB31CABA30600D20419 /* USBoxRatingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBoxRatingModel.m; sourceTree = "<group>"; };
+		84F7AEB51CABAAEC00D20419 /* BasicTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicTableView.h; sourceTree = "<group>"; };
+		84F7AEB61CABAAEC00D20419 /* BasicTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicTableView.m; sourceTree = "<group>"; };
+		84F7AEBB1CABAFFA00D20419 /* HomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableView.h; sourceTree = "<group>"; };
+		84F7AEBC1CABAFFA00D20419 /* HomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableView.m; sourceTree = "<group>"; };
+		84F7AEBE1CABB04400D20419 /* MovieTabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTabelCell.h; sourceTree = "<group>"; };
+		84F7AEBF1CABB04400D20419 /* MovieTabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTabelCell.m; sourceTree = "<group>"; };
+		84F7AEC01CABB04400D20419 /* MovieTabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieTabelCell.xib; sourceTree = "<group>"; };
+		84F7AEC31CABB12600D20419 /* RankingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingView.h; sourceTree = "<group>"; };
+		84F7AEC41CABB12600D20419 /* RankingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingView.m; sourceTree = "<group>"; };
+		84F7AEC91CABD09C00D20419 /* NegativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NegativeView.h; sourceTree = "<group>"; };
+		84F7AECA1CABD09C00D20419 /* NegativeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NegativeView.m; sourceTree = "<group>"; };
 		A1D649A02131B8ED27F95FD8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D0031B251C9FC6760029B44C /* FishMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0031B291C9FC6760029B44C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -432,6 +477,7 @@
 		D0031B1C1C9FC6760029B44C = {
 			isa = PBXGroup;
 			children = (
+				848635311CAAD3C300902AE0 /* FishMoviePrefixHeader.pch */,
 				D0031B271C9FC6760029B44C /* FishMovie */,
 				D0031B411C9FC6760029B44C /* FishMovieTests */,
 				D0031B4C1C9FC6760029B44C /* FishMovieUITests */,
@@ -529,10 +575,13 @@
 				D0031B8D1CA0F2E60029B44C /* USTopModel.m */,
 				D070B5DF1CAA82F000FD148C /* USBoxSubjectsModel.h */,
 				D070B5E01CAA82F000FD148C /* USBoxSubjectsModel.m */,
-				D070B5E21CAB9D3900FD148C /* USBoxSubjectModel.h */,
-				D070B5E31CAB9D3900FD148C /* USBoxSubjectModel.m */,
-				D070B5E51CAB9D6F00FD148C /* USBoxRatingModel.h */,
-				D070B5E61CAB9D6F00FD148C /* USBoxRatingModel.m */,
+
+=======
+				84F7AEAF1CABA2F200D20419 /* USBoxSubjectModel.h */,
+				84F7AEB01CABA2F200D20419 /* USBoxSubjectModel.m */,
+				84F7AEB21CABA30600D20419 /* USBoxRatingModel.h */,
+				84F7AEB31CABA30600D20419 /* USBoxRatingModel.m */,
+>>>>>>> Stashed changes
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -614,6 +663,27 @@
 		D0031B671C9FFAE10029B44C /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				848635421CAAD4D500902AE0 /* PosterView.h */,
+				848635411CAAD4D500902AE0 /* PosterView.m */,
+				848635331CAAD3D600902AE0 /* PosterCollectionView.h */,
+				848635321CAAD3D600902AE0 /* PosterCollectionView.m */,
+				848635351CAAD3D600902AE0 /* PosterCell.h */,
+				848635341CAAD3D600902AE0 /* PosterCell.m */,
+				848635391CAAD3D600902AE0 /* IndicateCollectionView.h */,
+				848635381CAAD3D600902AE0 /* IndicateCollectionView.m */,
+				8486353A1CAAD3D600902AE0 /* FMFlowLayout.m */,
+				8486353B1CAAD3D600902AE0 /* FMFlowLayout.h */,
+				84D1A0741CAB72B8005A1B78 /* MenuCell.h */,
+				84D1A0751CAB72B8005A1B78 /* MenuCell.m */,
+				84F7AEBB1CABAFFA00D20419 /* HomeTableView.h */,
+				84F7AEBC1CABAFFA00D20419 /* HomeTableView.m */,
+				84F7AEBE1CABB04400D20419 /* MovieTabelCell.h */,
+				84F7AEBF1CABB04400D20419 /* MovieTabelCell.m */,
+				84F7AEC01CABB04400D20419 /* MovieTabelCell.xib */,
+				84F7AEC31CABB12600D20419 /* RankingView.h */,
+				84F7AEC41CABB12600D20419 /* RankingView.m */,
+				84F7AEC91CABD09C00D20419 /* NegativeView.h */,
+				84F7AECA1CABD09C00D20419 /* NegativeView.m */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -635,10 +705,14 @@
 		D0031B6D1C9FFB260029B44C /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				848635451CAAD5A100902AE0 /* BasicCollectionView.h */,
+				848635441CAAD5A100902AE0 /* BasicCollectionView.m */,
 				D0031B831CA018680029B44C /* BaseViewController.h */,
 				D0031B841CA018680029B44C /* BaseViewController.m */,
 				D0031B861CA018850029B44C /* BaseNavigationController.h */,
 				D0031B871CA018850029B44C /* BaseNavigationController.m */,
+				84F7AEB51CABAAEC00D20419 /* BasicTableView.h */,
+				84F7AEB61CABAAEC00D20419 /* BasicTableView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -995,6 +1069,7 @@
 				D05733031CA510B800BF641D /* light.png in Resources */,
 				D05732B41CA510B800BF641D /* circleButton@2x.png in Resources */,
 				D057330E1CA510B800BF641D /* poster_title_home@2x.png in Resources */,
+				84F7AEC21CABB04400D20419 /* MovieTabelCell.xib in Resources */,
 				D057327C1CA510B800BF641D /* start_top250.png in Resources */,
 				D05732CA1CA510B800BF641D /* msg_select_new@2x.png in Resources */,
 				D05732FE1CA510B800BF641D /* delete.png in Resources */,
@@ -1211,25 +1286,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8486353F1CAAD3D600902AE0 /* IndicateCollectionView.m in Sources */,
 				D0031B7F1CA018500029B44C /* FMMoreViewController.m in Sources */,
-				D070B5E71CAB9D6F00FD148C /* USBoxRatingModel.m in Sources */,
+
+=======
+				84D1A0771CAB72B8005A1B78 /* MenuCell.m in Sources */,
 				D0031B921CA14E080029B44C /* InterfaceManager.m in Sources */,
-				D070B5E41CAB9D3900FD148C /* USBoxSubjectModel.m in Sources */,
+				84F7AEB11CABA2F200D20419 /* USBoxSubjectModel.m in Sources */,
+>>>>>>> Stashed changes
 				D0031B851CA018680029B44C /* BaseViewController.m in Sources */,
 				D0031B7C1CA018450029B44C /* FMCinemaViewController.m in Sources */,
 				D070B5E11CAA82F000FD148C /* USBoxSubjectsModel.m in Sources */,
 				D0031B761CA018270029B44C /* FMMovieViewController.m in Sources */,
 				D0031B881CA018850029B44C /* BaseNavigationController.m in Sources */,
 				D0031B2D1C9FC6760029B44C /* AppDelegate.m in Sources */,
+				848635461CAAD5A100902AE0 /* BasicCollectionView.m in Sources */,
+				84F7AEC11CABB04400D20419 /* MovieTabelCell.m in Sources */,
+				84F7AEC51CABB12600D20419 /* RankingView.m in Sources */,
+				848635431CAAD4D500902AE0 /* PosterView.m in Sources */,
 				D070B5BA1CAA52CB00FD148C /* UIViewExt.m in Sources */,
+				84F7AEBD1CABAFFA00D20419 /* HomeTableView.m in Sources */,
 				D070B5B71CAA522B00FD148C /* UIColor+Utils.m in Sources */,
 				D0031B791CA018380029B44C /* FMNewsViewController.m in Sources */,
+				848635401CAAD3D600902AE0 /* FMFlowLayout.m in Sources */,
 				D0031B8E1CA0F2E60029B44C /* USTopModel.m in Sources */,
+				84F7AEB71CABAAEC00D20419 /* BasicTableView.m in Sources */,
+				84F7AECB1CABD09C00D20419 /* NegativeView.m in Sources */,
 				D0031B821CA0185B0029B44C /* FMTopViewController.m in Sources */,
+				8486353D1CAAD3D600902AE0 /* PosterCell.m in Sources */,
 				D0031B2A1C9FC6760029B44C /* main.m in Sources */,
 				D0031B8B1CA0E92B0029B44C /* USBoxModel.m in Sources */,
 				D0031B731C9FFD160029B44C /* FishTabBarController.m in Sources */,
 				D070B5BD1CAA613400FD148C /* FMAboutViewContorller.m in Sources */,
+				84F7AEB41CABA30600D20419 /* USBoxRatingModel.m in Sources */,
+				8486353C1CAAD3D600902AE0 /* PosterCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1351,6 +1441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = /Users/admin/Desktop/FishMovie/FishMovie/FishMovie/FishMoviePrefixHeader.pch;
 				INFOPLIST_FILE = FishMovie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1366,6 +1457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = /Users/admin/Desktop/FishMovie/FishMovie/FishMovie/FishMoviePrefixHeader.pch;
 				INFOPLIST_FILE = FishMovie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

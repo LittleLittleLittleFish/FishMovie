@@ -7,8 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+<<<<<<< Updated upstream
 #import "USBoxSubjectModel.h"
 
+=======
+#import <JSONModel.h>
+@class USBoxSubjectModel;
+>>>>>>> Stashed changes
 @protocol USBoxSubjectsModel<NSObject>
 @end
 

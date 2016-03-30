@@ -2,6 +2,7 @@
 //  USBoxSubjectModel.h
 //  FishMovie
 //
+<<<<<<< Updated upstream
 //  Created by Xiedonghua on 16/3/30.
 //  Copyright © 2016年 com.littlefish. All rights reserved.
 //
@@ -9,6 +10,14 @@
 #import <Foundation/Foundation.h>
 #import "USBoxRatingModel.h"
 
+=======
+//  Created by admin on 16/3/30.
+//  Copyright © 2016年 com.littlefish. All rights reserved.
+//
+
+#import <JSONModel/JSONModel.h>
+@class USBoxRatingModel;
+>>>>>>> Stashed changes
 @interface USBoxSubjectModel : JSONModel
 @property(nonatomic, strong)USBoxRatingModel<Optional> *rating;
 @property(nonatomic, strong)NSNumber<Optional> *collect_count;
