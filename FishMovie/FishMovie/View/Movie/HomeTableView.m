@@ -14,7 +14,18 @@
 #import "RankingView.h"
 #import "Constant.h"
 
+static NSString* const cellIndentifier=@"MovieTableCell";
+
 @implementation HomeTableView
+
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        UINib *nib = [UINib nibWithNibName:NSStringFromClass([MovieTabelCell class]) bundle:nil];
+        [self registerNib:nib forCellReuseIdentifier:cellIndentifier];
+    }
+    return self;
+}
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return self.height;
@@ -22,20 +33,14 @@
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"tableViewCell");
-    static NSString*cellIndentifier=@"MovieTableCell";
-    BOOL nibsRegistered = NO;
-    if (!nibsRegistered) {
-        UINib *nib = [UINib nibWithNibName:NSStringFromClass([MovieTabelCell class]) bundle:nil];
-        [tableView registerNib:nib forCellReuseIdentifier:cellIndentifier];
-        nibsRegistered = YES;
+    MovieTabelCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifier];
+    if (cell) {
+        USBoxSubjectsModel* model = self.dataArray[indexPath.row];
+        [cell.posterImageView sd_setImageWithURL:[NSURL URLWithString:model.subject.images[@"small"]]];
+        cell.nameLabel.text = model.subject.title;
+        cell.yearLabel.text = model.subject.year;
+        cell.rankingView.score = model.subject.rating.stars.integerValue;
     }
-    MovieTabelCell*cell=[tableView dequeueReusableCellWithIdentifier:cellIndentifier];
-    
-    USBoxSubjectsModel*model=self.dataArray[indexPath.row];
-    [cell.posterImageView sd_setImageWithURL:[NSURL URLWithString:model.subject.images[@"small"]]];
-    cell.nameLabel.text=model.subject.title;
-    cell.yearLabel.text=model.subject.year;
-    cell.rankingView.score=model.subject.rating.stars.integerValue;
     return cell;
 }
 

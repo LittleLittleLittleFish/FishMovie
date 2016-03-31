@@ -77,13 +77,16 @@
 #pragma mark - 数据加载
 - (void)loadData{
     [InterfaceManager getUSMovieList:^(int errorCode, NSString *errorMessage, id data) {
-        model=data;
-        _posterView.dataArray=model.subjects;
-        _tableView.dataArray=model.subjects;
-        [(UICollectionView*)_posterView.posterCollectionView reloadData];
-        [(UICollectionView*)_posterView.menuCollectionView reloadData];
-        [_tableView reloadData];
-        
+        if (errorCode==0) {
+            model=data;
+            _posterView.dataArray=model.subjects;
+            _tableView.dataArray=model.subjects;
+            [(UICollectionView*)_posterView.posterCollectionView reloadData];
+            [(UICollectionView*)_posterView.menuCollectionView reloadData];
+            [_tableView reloadData];
+        }else{
+            
+        }
     }];
 }
 
