@@ -1,9 +1,9 @@
 //
-//  UIColor+Utils.m
-//  DYZB
+//  UIColor+Utils.h
+//  littleFish
 //
-//  Created by 周兵 on 15-3-18.
-//  Copyright (c) 2015年 mydouyu. All rights reserved.
+//  Created by 谢东华 on 15-3-18.
+//  Copyright (c) 2015年 littlefish. All rights reserved.
 //
 
 #import "UIColor+Utils.h"

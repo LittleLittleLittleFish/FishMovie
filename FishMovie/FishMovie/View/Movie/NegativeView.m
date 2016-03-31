@@ -9,6 +9,8 @@
 
 #import "NegativeView.h"
 #import "RankingView.h"
+#import "Constant.h"
+
 #define MARGIN 15
 @implementation NegativeView
 
@@ -19,6 +21,7 @@
     }
     return self;
 }
+
 -(void)initSubViews{
 
     _movieImage=[[UIImageView alloc] initWithFrame:CGRectMake(MARGIN, MARGIN, (self.width-MARGIN*2)/2, self.height/3)];

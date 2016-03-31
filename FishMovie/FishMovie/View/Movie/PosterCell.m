@@ -13,6 +13,8 @@
 #import "USBoxRatingModel.h"
 #import "NegativeView.h"
 #import "RankingView.h"
+#import "Constant.h"
+
 @implementation PosterCell{
     UIImageView*firstView;
     NegativeView*negativeView;

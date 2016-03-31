@@ -7,6 +7,7 @@
 //
 
 #import "RankingView.h"
+#import "Constant.h"
 
 @implementation RankingView{
     UIImageView*starBackgroundView;

@@ -13,39 +13,31 @@
 #import "InterfaceManager.h"
 #import "USBoxModel.h"
 #import "HomeTableView.h"
+#import "Constant.h"
 
 @interface FMMovieViewController()
-
 
 @end
 
 @implementation FMMovieViewController{
 
-    PosterView*_posterView;
-    HomeTableView*_tableView;
+    PosterView      *_posterView;
+    HomeTableView   *_tableView;
     
-    UIView*buttonContainer;
-    UIButton*posterButton;
-    UIButton*tableButton;
+    UIView      *buttonContainer;
+    UIButton    *posterButton;
+    UIButton    *tableButton;
     
-    __weak USBoxModel*model;
+    USBoxModel*model;
 }
 -(void)viewDidLoad{
     [super viewDidLoad];
     self.title=@"电影";
     [self initSubViews];
-    
-    [InterfaceManager getUSMovieList:^(int errorCode, NSString *errorMessage, id data) {
-        model=data;
-        _posterView.dataArray=model.subjects;
-        _tableView.dataArray=model.subjects;
-        [(UICollectionView*)_posterView.posterCollectionView reloadData];
-        [(UICollectionView*)_posterView.menuCollectionView reloadData];
-        [_tableView reloadData];
-        
-    }];
+    [self loadData];
 }
 
+#pragma mark - 初始化视图
 -(void)initNavigationBar{
     buttonContainer=[[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
     
@@ -63,12 +55,10 @@
     [buttonContainer addSubview:tableButton];
     [buttonContainer addSubview:posterButton];
     
-    
-    
     UIBarButtonItem*rightItem = [[UIBarButtonItem alloc]initWithCustomView:buttonContainer];
     self.navigationItem.rightBarButtonItem= rightItem;
-    
 }
+
 -(void)initSubViews{
     
     [self initNavigationBar];
@@ -82,21 +72,22 @@
 
     [self.view addSubview:_tableView];
     [self.view addSubview:_posterView];
-    
-<<<<<<< Updated upstream
-    [InterfaceManager getUSMovieList:^(int errorCode, NSString *errorMessage, id data) {
-        if (errorCode==0) {
-            self.modelUSBox = data;
-            
-        }else{
-            
-        }
-    }];
-=======
->>>>>>> Stashed changes
-    
 }
 
+#pragma mark - 数据加载
+- (void)loadData{
+    [InterfaceManager getUSMovieList:^(int errorCode, NSString *errorMessage, id data) {
+        model=data;
+        _posterView.dataArray=model.subjects;
+        _tableView.dataArray=model.subjects;
+        [(UICollectionView*)_posterView.posterCollectionView reloadData];
+        [(UICollectionView*)_posterView.menuCollectionView reloadData];
+        [_tableView reloadData];
+        
+    }];
+}
+
+//页面翻转效果
 -(void)pageOverturn{
     //button翻转
     posterButton.hidden=!posterButton.hidden;
@@ -118,8 +109,6 @@
     [container exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
     [UIView commitAnimations];
 }
-
-
 
 
 @end

@@ -12,6 +12,8 @@
 #import "USBoxSubjectModel.h"
 #import "USBoxRatingModel.h"
 #import "RankingView.h"
+#import "Constant.h"
+
 @implementation HomeTableView
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

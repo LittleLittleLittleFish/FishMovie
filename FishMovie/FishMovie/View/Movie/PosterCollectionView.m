@@ -9,6 +9,8 @@
 #import "PosterCollectionView.h"
 #import "PosterCell.h"
 #import "USBoxModel.h"
+#import "Constant.h"
+
 @implementation PosterCollectionView
 -(id)initWithFrame:(CGRect)frame collectionViewLayout:(nonnull UICollectionViewLayout *)layout{
     self=[super initWithFrame:frame collectionViewLayout:layout];

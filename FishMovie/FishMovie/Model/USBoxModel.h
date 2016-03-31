@@ -48,8 +48,8 @@
 
 @interface USBoxModel : JSONModel
 
-@property(nonatomic, copy)NSString<Optional> *date;
-@property(nonatomic, copy)NSString<Optional> *title;
+@property(nonatomic, strong)NSString<Optional> *date;
+@property(nonatomic, strong)NSString<Optional> *title;
 @property(nonatomic, strong)NSArray<Optional, USBoxSubjectsModel> *subjects;
 
 @end

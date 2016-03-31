@@ -7,6 +7,7 @@
 //
 
 #import "MenuCell.h"
+#import "Constant.h"
 
 @implementation MenuCell
 

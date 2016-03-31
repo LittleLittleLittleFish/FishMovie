@@ -13,6 +13,7 @@
 #import "USBoxModel.h"
 #import "USBoxSubjectsModel.h"
 #import "USBoxSubjectModel.h"
+#import "Constant.h"
 
 #define CONTAINER_HEIGHT 64
 #define MENU_HEIGHT 44
